@@ -36,6 +36,7 @@ import thingsBuiltImg from '../imports/Screenshot_2026-04-13_at_9.25.32 AM.png';
 import portfolioOverviewImg from '../imports/image-1.png';
 import slackTaskCreationImg from '../imports/image-3.png';
 import { DesignRhythmCircle } from './components/design-rhythm-circle';
+import { BacklogProcessFlow } from './components/backlog-process-flow';
 
 const colors = {
   background: '#faf9f7',
@@ -276,7 +277,18 @@ export const buildSlides = (components: any) => {
       <img src={slackTaskCreationImg} alt="Slack task creation interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 11: Micro impact
+    // Slide 11: New Process
+    <HeadlineFullWidth
+      key="11a"
+      eyebrow="The new process"
+      headline="The intake form was just the entry point."
+    >
+      <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <BacklogProcessFlow />
+      </div>
+    </HeadlineFullWidth>,
+
+    // Slide 12: Micro impact
     <HeadlineFullWidth
       key="11"
       eyebrow="Micro impact"
