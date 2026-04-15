@@ -37,6 +37,7 @@ import portfolioOverviewImg from '../imports/image-1.png';
 import slackTaskCreationImg from '../imports/image-3.png';
 import { DesignRhythmCircle } from './components/design-rhythm-circle';
 import { BacklogProcessFlow } from './components/backlog-process-flow';
+import { PilotTestPlan } from './components/pilot-test-plan';
 
 const colors = {
   background: '#faf9f7',
