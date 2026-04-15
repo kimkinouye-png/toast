@@ -1,5 +1,5 @@
 export const DesignRhythmCircle = () => (
-  <svg viewBox="0 0 800 640" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: '800px', display: 'block', margin: '0 auto' }}>
+  <svg viewBox="0 0 800 640" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', display: 'block' }}>
     <circle cx="400" cy="320" r="200" fill="none" stroke="#999" strokeWidth="2.5"/>
 
     {/* Worksessions - top */}

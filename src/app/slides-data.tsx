@@ -252,7 +252,7 @@ export const buildSlides = (components: any) => {
       key="8"
       headline="The issues were systemic."
     >
-      <div className="flex items-center justify-center h-full">
+      <div style={{ width: '100%', height: '100%' }}>
         <DesignRhythmCircle />
       </div>
     </HeadlineFullWidth>,
