@@ -11,7 +11,6 @@ import { PDLCFrictionMap } from './components/pdlc-friction-map';
 import { PilotPrioritization } from './components/pilot-prioritization';
 import { AIAdoptionModel } from './components/ai-adoption-model';
 import { FigJamBoard } from './components/figjam-board';
-import { SolutionsBrainstorm } from './components/solutions-brainstorm';
 import { RoseSystem } from './components/rose-system';
 import { DailyDigestLanding } from './components/daily-digest-landing';
 import { DailyDigestOutput } from './components/daily-digest-output';
@@ -330,17 +329,7 @@ export const buildSlides = (components: any) => {
       <AIAdoptionModel />
     </HeadlineFullWidth>,
 
-    // Slide 18: Test Plan & Results
-    <HeadlineFullWidth
-      key="18b"
-      eyebrow="Test plan & results"
-      headline="Every pilot was measured before it was built."
-    >
-      <PilotTestPlan />
-    </HeadlineFullWidth>,
-    
-
-    // Slide 19: The diagnosis
+    // Slide 18: The diagnosis
     <HeadlineFullWidth
       key="19"
       eyebrow="The diagnosis"
@@ -349,16 +338,16 @@ export const buildSlides = (components: any) => {
       <PDLCFrictionMap />
     </HeadlineFullWidth>,
 
-    // Slide 20: Brainstorming solutions
+    // Slide 19: Test Plan & Results
     <HeadlineFullWidth
-      key="20"
-      eyebrow="The brainstorm"
-      headline="Teams brainstormed a mix of solutions to resolve pain felt across each phase."
+      key="18b"
+      eyebrow="Test plan & results"
+      headline="Every pilot was measured before it was built."
     >
-      <SolutionsBrainstorm />
+      <PilotTestPlan />
     </HeadlineFullWidth>,
 
-    // Slide 21: Case study 01 - PRD to Design Brief
+    // Slide 20: Case study 01 - PRD to Design Brief
     <HeadlineFullWidth
       key="21"
       eyebrow="Case study 01"
@@ -367,7 +356,7 @@ export const buildSlides = (components: any) => {
       <img src={prdDesignBriefImg} alt="PRD Design Synthesizer interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 22: Case study 02 - Legal Review
+    // Slide 21: Case study 02 - Legal Review
     <HeadlineFullWidth
       key="22"
       eyebrow="Case study 02"
@@ -376,7 +365,7 @@ export const buildSlides = (components: any) => {
       <img src={legalAssistantImg} alt="UK CDA Assistant interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 23: Case study 03 - Agentic Editor (NEW)
+    // Slide 22: Case study 03 - Agentic Editor (NEW)
     <HeadlineVisual
       key="23"
       eyebrow="Case study 03"
@@ -385,7 +374,7 @@ export const buildSlides = (components: any) => {
       <XDContentAnalyzer />
     </HeadlineVisual>,
 
-    // Slide 24: Case study 04 - Agentic Ideation
+    // Slide 23: Case study 04 - Agentic Ideation
     <HeadlineFullWidth
       key="24"
       eyebrow="Case study 04"
@@ -394,7 +383,7 @@ export const buildSlides = (components: any) => {
       <img src={agenticIdeationImg} alt="Agentic ideation interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 25: Case study 05 - Vibe Prototyping
+    // Slide 24: Case study 05 - Vibe Prototyping
     <HeadlineFullWidth
       key="25"
       eyebrow="Case study 05"
@@ -403,12 +392,12 @@ export const buildSlides = (components: any) => {
       <img src={vibePrototypingImg} alt="Vibe prototyping interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 26: The results (redesigned)
+    // Slide 25: The results (redesigned)
     <ResultsSlide key="26" />,
 
     // CHAPTER 3: TOOLS I BUILD
 
-    // Slide 27: Chapter 3 Intro
+    // Slide 26: Chapter 3 Intro
     <ChapterIntro
       key="27"
       eyebrow="Case Study 03"
@@ -417,13 +406,13 @@ export const buildSlides = (components: any) => {
       ghostNumber="03"
     />,
 
-    // Slide 28: Capacity Planner - Beginning
+    // Slide 27: Capacity Planner - Beginning
     <Statement
       key="28"
       text="Do we have enough designers?"
     />,
 
-    // Slide 29: Capacity Planner - The tool
+    // Slide 28: Capacity Planner - The tool
     <HeadlineVisual
       key="29"
       eyebrow="Capacity Planner — The tool"
@@ -445,13 +434,13 @@ export const buildSlides = (components: any) => {
       </div>
     </HeadlineVisual>,
 
-    // Slide 30: Rose - Beginning
+    // Slide 29: Rose - Beginning
     <Statement
       key="30"
       text="Feedback can sometimes be hard and confusing."
     />,
 
-    // Slide 31: Rose - The interface
+    // Slide 30: Rose - The interface
     <HeadlineVisual
       key="31"
       eyebrow="Rose — The product"
@@ -462,13 +451,13 @@ export const buildSlides = (components: any) => {
       </div>
     </HeadlineVisual>,
 
-    // Slide 32: Daily Digest - The question
+    // Slide 31: Daily Digest - The question
     <Statement
       key="32"
       text="How can I keep up with all of the news in AI and hone in on what's most important?"
     />,
 
-    // Slide 33: Daily Digest - The tool
+    // Slide 32: Daily Digest - The tool
     <HeadlineFullWidth
       key="33"
       eyebrow="Daily Digest — The tool"
@@ -482,7 +471,7 @@ export const buildSlides = (components: any) => {
 
     // CLOSING
 
-    // Slide 34: Contact
+    // Slide 33: Contact
     <HeadlineFullWidth
       key="34"
       eyebrow=""
@@ -491,7 +480,7 @@ export const buildSlides = (components: any) => {
       <ContactCard />
     </HeadlineFullWidth>,
 
-    // Slide 35: My Why
+    // Slide 34: My Why
     <Statement
       key="35"
       text="My Why"

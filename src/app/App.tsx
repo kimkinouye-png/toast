@@ -944,7 +944,7 @@ const RoseDiagram = () => (
   </div>
 );
 
-// Speaker notes for each slide (34 slides total)
+// Speaker notes for each slide (34 slides)
 const speakerNotes = [
   // Slide 1
   "Thank you all for having me. I'm Kim — a design operations leader at PayPal, where I've spent the last four years building how the design org operates. I currently support our agentic product team and run an AI pilot program intended to evolve the ways of working. Today I'll walk you through some of that work. I want this to feel like a conversation, so please ask questions as we go.",
@@ -967,77 +967,80 @@ const speakerNotes = [
   // Slide 7
   "On Branded Checkout, there were as many as 4 product managers to every 1 designer. On some teams, 8 to 1. One designer fielding requests from 8 PMs — each with their own roadmap, their own deadlines, and their own Slack channel. Any PM could schedule a meeting, drop a Figma link, or Slack expecting immediate design support. No sanctioned way to say no, push back, or even see everything being asked of them. Constant context switching, back-to-back meetings, burnout invisible to leadership because there was no system to surface it.",
 
+  // Slide 8
+  "One of the biggest shifts I introduced was the design backlog — and it came with a single rule: if it's not in the backlog, it doesn't get design time. To get into the backlog, the work had to be defined. That single rule changed the relationship between design and product. I owned the gatekeeper role myself initially, absorbing the political friction so designers could focus on the work.",
+
   // Slide 9
   "One of the biggest shifts I introduced was the design backlog — and it came with a single rule: if it's not in the backlog, it doesn't get design time. To get into the backlog, the work had to be defined. That single rule changed the relationship between design and product. I owned the gatekeeper role myself initially, absorbing the political friction so designers could focus on the work.",
 
   // Slide 10
-  "One of the biggest shifts I introduced was the design backlog — and it came with a single rule: if it's not in the backlog, it doesn't get design time. To get into the backlog, the work had to be defined. That single rule changed the relationship between design and product. I owned the gatekeeper role myself initially, absorbing the political friction so designers could focus on the work.",
-
-  // Slide 11
   "I built the operating rhythms around the team's existing behavior. I introduced meetings incrementally — one team at a time, starting with the teams most ready for structure. I updated Asana myself for the first weeks to demonstrate value before asking the team to own it. I empowered teams to adapt the system — and then the whole org mirrored the model.",
 
-  // Slide 12
+  // Slide 11
   "Designers got their time and autonomy back. Meeting time dropped significantly. Focus time went from 26% to 66% of the work week. Designers were empowered to decline undefined requests — they had a clear process to point to. Engagement scores improved meaningfully. Teams felt more in control of their work. The before/after here isn't just a number — it's a felt difference in what a designer's week looked and felt like.",
 
-  // Slide 13
+  // Slide 12
   "",
+
+  // Slide 13
+  "The system scaled — and became the operating standard for the entire org. Every design team at PayPal eventually mirrored the structure I built for the first team. And this Ways of Working system became the foundation that made the AI pilot program possible. You can't measure improvement without a baseline.",
 
   // Slide 14
   "The system scaled — and became the operating standard for the entire org. Every design team at PayPal eventually mirrored the structure I built for the first team. And this Ways of Working system became the foundation that made the AI pilot program possible. You can't measure improvement without a baseline.",
 
   // Slide 15
-  "The system scaled — and became the operating standard for the entire org. Every design team at PayPal eventually mirrored the structure I built for the first team. And this Ways of Working system became the foundation that made the AI pilot program possible. You can't measure improvement without a baseline.",
-
-  // Slide 16
   "The second body of work is the AI pilot program I run today. This is only possible because the Ways of Working foundation is already in place. We have the structure to run something intentional — not just deploy tools.",
 
-  // Slide 17
+  // Slide 16
   "Across the tech industry, AI adoption has become a strategic imperative. Design teams already operate at capacity — if not over. AI usage is still wildly inconsistent. Some designers experiment heavily, while others never touch it. There is no guide on how to design with it, and no one has the time to stop what they are doing to figure out what works.",
 
-  // Slide 18
+  // Slide 17
   "I designed the program before anyone built anything. I created the test and measurement plan for every pilot — defining the problem, hypothesis, success criteria, and how we'd know if something was working before a single tool was built. We ran 8 pilots across the full PDLC. We prioritized impact, effort, and expected value — and we intentionally created space for less measurable longer-horizon bets like Replit prototyping.",
 
-  // Slide 19
+  // Slide 18
   "We diagnosed the friction before we prescribed the solution. We started with structured discovery — surveys and interviews across the Checkout design team. Two pain points rose to the top: PRDs that weren't written customer-back, and legal reviews that were manual, time-consuming, and a consistent source of launch delays. We weren't guessing. We were building solutions against things the team told us were actually hurting them.",
 
+  // Slide 19
+  "Every pilot was measured before it was built. I created the test and measurement plan for each one — defining the problem, hypothesis, success criteria, and how we'd know if something was working before a single tool was built. We ran eight pilots across the full PDLC and prioritized impact, effort, and expected value.",
+
   // Slide 20
-  "The opportunity is not just to use AI for time efficiency — it is to accelerate how great design gets made. The PDLC at PayPal is full of friction. Incomplete PRDs. Slow legal reviews. Prototypes are time consuming to create. Research and synthesis is manual. AI has the potential to compress every one of those bottlenecks. But deploying tools without a framework doesn't produce acceleration — it produces more noise.",
-
-  // Slide 21
-  "Teams brainstormed a mix of solutions to resolve pain felt across each phase of the PDLC. We mapped potential pilots against the entire design process — from discovery through delivery.",
-
-  // Slide 22
   "PRDs at PayPal are written by product managers for engineers — technical, not customer-back. Designers couldn't tell if the problem was defined or if they were starting from scratch. I designed the test and brief template. A content designer built the agent. We ran it across specific workstreams. The agent turns a PRD into a clear design brief — surfacing what matters, flagging what's missing, and suggesting questions the team should be asking. It's live and running in specific workstreams today.",
 
-  // Slide 23
+  // Slide 21
   "Legal and compliance review at PayPal is complex. Every piece of consumer-facing content must be reviewed. For global launches that multiplies by region. I researched the problem by talking directly to content ops and the Jira manager — they had deep institutional knowledge. The root cause was simple: wrong templates triggering wrong lawyers. Tickets sitting ignored for days. The MCP agent identifies the correct template, fills it completely — no tired eyes, no missed checkboxes, no wrong routing. Error rate: zero. The MCP agent fixes the intake, not the review.",
 
-  // Slide 24
+  // Slide 22
   "Rapid exploration without losing momentum. Agentic ideation allows designers to test multiple directions quickly before committing to a single path.",
 
-  // Slide 25
+  // Slide 23
   "Six months in. Eight pilots designed and tested. Nine of twenty-five workstreams adopted without stopping to ship. Time savings of 75 to 84 percent at the task level. This is what responsible AI transformation looks like inside a regulated fintech company.",
 
-  // Slide 26
+  // Slide 24
   "The last thing I want to show you is what I build on my own time. Not because anyone asked me to — because I saw problems worth solving. The same instinct I bring to my day job.",
 
-  // Slide 27
+  // Slide 25
   "Design leaders couldn't back up headcount requests with hard numbers the way engineering could. Engineering has had data-driven capacity planning for years — shared formulas, story points, velocity tracked over time. Design had different spreadsheets, different assumptions, and no shared sizing framework. Headcount decisions were made on gut feel. I built a tool to close that gap.",
 
-  // Slide 28
+  // Slide 26
   "I built the Capacity Planner around the mental model design leaders already use — scenario comparison, available weeks, roadmap mapping. The tool calculates available work weeks per designer, maps them against the roadmap, and lets leaders compare staffing scenarios side by side. Consistent math across the org for the first time. My manager's feedback: this will make it so all teams can size and calculate the same way — solving a pain point for the org at large.",
 
-  // Slide 29
+  // Slide 27
   "Rose came from a more human observation. Feedback at work is often ambiguous, politically loaded, or subtly biased — and the person receiving it has no one in their corner to help them decode it. Enterprise HR tools serve the company. Career coaching tools focus on resumes and job searching. No tool sits on the employee's side of feedback they've already received. That's the gap Rose fills.",
 
-  // Slide 30
+  // Slide 28
   "Rose is built on the Claude API and trained on a specific, curated knowledge base — bias frameworks, feedback science, psychological safety research. Every source is deliberate. Stem is Rose's research pipeline — it monitors curated sources, scores new articles, and requires human review before anything enters Rose's brain. Rose doesn't learn automatically. That's intentional. Quality is not something you automate away.",
 
-  // Slide 31
+  // Slide 29
   "How can I keep up with all the news in AI and hone in on what's most important? This question led to building the Daily Digest tool.",
 
-  // Slide 32
+  // Slide 30
   "The Daily Digest pulls from 16 curated RSS feeds, uses Claude to summarize and synthesize, then groups the top stories by topic. It's an AI-curated daily briefing that cuts through the noise.",
+
+  // Slide 31
+  "Rose — the product: making feedback less confusing and more actionable. Built on the Claude API with a curated knowledge base and human-in-the-loop research through Stem.",
+
+  // Slide 32
+  "Daily Digest — the tool: pulls from curated RSS feeds, uses Claude to summarize and group top stories by topic so you can keep up with AI news without drowning in it.",
 
   // Slide 33
   "Visit my site for more examples and case studies. Here are five tools I've built on my own time — Capacity Planner, Rose, Stem, Aperi, and Daily Digest. Each one addresses a real problem I saw worth solving. You can find live demos and detailed case studies for each project on my website.",

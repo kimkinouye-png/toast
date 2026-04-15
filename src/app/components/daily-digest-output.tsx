@@ -7,9 +7,9 @@ export const DailyDigestOutput = () => {
       excerpt: "Stanford's 2026 AI Index report cuts through the AI hype cycle noise with data-driven insights. It provides a grounded perspective you need to make strategic decisions."
     },
     {
-      category: 'The Verge',
-      title: 'Sam Altman reportedly targeted in second attack',
-      excerpt: 'Two suspects were arrested after a shooting at Altman\'s Russian Hill home, the second attack in three days. This escalating security situation underscores the growing tensions and stakes in the AI industry.'
+      category: 'DESIGN',
+      title: 'How to turn your competitor\'s worst reviews into your strongest design argument',
+      excerpt: 'Instead of just copying competitor interfaces, mine their negative reviews for actual user pain points. This flips competitive research from visual inspiration to evidence-backed frameworks for justifying why design choices fix stakeholder pain with real user data.'
     },
     {
       category: 'MIT Technology Review',
