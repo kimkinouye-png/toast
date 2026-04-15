@@ -262,6 +262,7 @@ const HeadlineVisual = ({ eyebrow, headline, children }: any) => (
   <div className="relative w-full h-screen overflow-hidden" style={{ backgroundColor: colors.background }}>
     <div className="flex h-full gap-12" style={{ padding: '52px 80px' }}>
       <div className="flex-1 flex flex-col justify-center">
+        {eyebrow ? (
         <div
           className="uppercase tracking-[0.18em] mb-6"
           style={{
@@ -273,6 +274,7 @@ const HeadlineVisual = ({ eyebrow, headline, children }: any) => (
         >
           {eyebrow}
         </div>
+        ) : null}
         <h2
           className="max-w-xl"
           style={{
@@ -944,7 +946,7 @@ const RoseDiagram = () => (
   </div>
 );
 
-// Speaker notes for each slide (33 slides)
+// Speaker notes for each slide (34 slides)
 const speakerNotes = [
   // Slide 1
   "Thank you all for having me. I'm Kim — a design operations leader at PayPal, where I've spent the last four years building how the design org operates. I currently support our agentic product team and run an AI pilot program intended to evolve the ways of working. Today I'll walk you through some of that work. I want this to feel like a conversation, so please ask questions as we go.",
@@ -1043,7 +1045,10 @@ const speakerNotes = [
   "Visit my site for more examples and case studies. Here are five tools I've built on my own time — Capacity Planner, Rose, Stem, Aperi, and Daily Digest. Each one addresses a real problem I saw worth solving. You can find live demos and detailed case studies for each project on my website.",
 
   // Slide 33
-  "My Why. I want to close with something personal. I don't do this work because it's my job. I do it because I genuinely believe that the difference between a team that's thriving and a team that's drowning is often infrastructure — not talent, not effort, not intentions. Just the absence of systems that let people do their best work. That's what I build."
+  "My Why. I want to close with something personal. I don't do this work because it's my job. I do it because I genuinely believe that the difference between a team that's thriving and a team that's drowning is often infrastructure — not talent, not effort, not intentions. Just the absence of systems that let people do their best work. That's what I build.",
+
+  // Slide 34
+  "I consider myself someone who can turn operational chaos into systems that scale. I told Figma Make to create an image that illustrated something that started in chaos and became orderly, and I didn't like any of it because it was static and the shapes were too uniform. What i like about this animation is that is is constantly moving in beautiful patterns. Teams are dynamic, they are shifting and evolving with the work; and the ebb and flow of business."
 ];
 
 // Main slideshow component

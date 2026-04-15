@@ -423,7 +423,17 @@ export const buildSlides = (components: any) => {
     <Statement
       key="35"
       text="My Why"
-    />
+    />,
+
+    // Slide 34: Chaos → order (HeadlineVisual, same headline & animation as slide 3)
+    <HeadlineVisual
+      key="36"
+      headline="I turn operational chaos into systems that scale."
+    >
+      <div className="flex items-center justify-center h-full">
+        <ChaosToOrder />
+      </div>
+    </HeadlineVisual>
   ];
 };
 
