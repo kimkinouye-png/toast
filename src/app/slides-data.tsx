@@ -359,14 +359,6 @@ export const buildSlides = (components: any) => {
       <PilotTestPlan />
     </HeadlineFullWidth>,
     
-    // Slide 18: Discovery
-    <HeadlineFullWidth
-      key="18"
-      eyebrow="Discovery"
-      headline="Workshop results identified clear points of friction across the PDLC."
-    >
-      <FigJamBoard />
-    </HeadlineFullWidth>,
 
     // Slide 19: The diagnosis
     <HeadlineFullWidth
