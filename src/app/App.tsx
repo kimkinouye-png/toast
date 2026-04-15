@@ -967,9 +967,6 @@ const speakerNotes = [
   // Slide 7
   "On Branded Checkout, there were as many as 4 product managers to every 1 designer. On some teams, 8 to 1. One designer fielding requests from 8 PMs — each with their own roadmap, their own deadlines, and their own Slack channel. Any PM could schedule a meeting, drop a Figma link, or Slack expecting immediate design support. No sanctioned way to say no, push back, or even see everything being asked of them. Constant context switching, back-to-back meetings, burnout invisible to leadership because there was no system to surface it.",
 
-  // Slide 8
-  "",
-
   // Slide 9
   "One of the biggest shifts I introduced was the design backlog — and it came with a single rule: if it's not in the backlog, it doesn't get design time. To get into the backlog, the work had to be defined. That single rule changed the relationship between design and product. I owned the gatekeeper role myself initially, absorbing the political friction so designers could focus on the work.",
 
