@@ -21,6 +21,7 @@ import { ContactCard } from './components/contact-card';
 import { Quote } from './components/quote';
 import { SoundWaves, GeometricEye, NotebookNotes, GeometricEar } from './components/observing-visuals';
 import { User } from 'lucide-react';
+import { DrowningDesigner } from './components/drowning-designer';
 import listeningGif from '../imports/Observe_I_See_GIF_by_Cool_Cats.gif';
 import workingTooMuchGif from '../imports/Working_Too_Much_GIF_by_Mino_Games.gif';
 import prdDesignBriefImg from '../imports/Screenshot_2026-04-12_at_6.42.40 PM.png';
