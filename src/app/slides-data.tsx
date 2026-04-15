@@ -34,7 +34,7 @@ import dailyDigestOutputImg from '../imports/Screenshot_2026-04-13_at_8.33.36 AM
 import thingsBuiltImg from '../imports/Screenshot_2026-04-13_at_9.25.32 AM.png';
 import portfolioOverviewImg from '../imports/image-1.png';
 import slackTaskCreationImg from '../imports/image-3.png';
-import systemicIssuesImg from '../imports/image-4.png';
+import { DesignRhythmCircle } from './components/design-rhythm-circle';
 
 const colors = {
   background: '#faf9f7',
@@ -50,7 +50,111 @@ const colors = {
   ghost: 'rgba(26,26,26,0.04)'
 };
 
-// Import slide components (these will be passed from App.tsx)
+const XDContentAnalyzer = () => (
+  <div style={{ background: '#1a3a8f', borderRadius: '12px', padding: '32px 40px', fontFamily: 'DM Sans, sans-serif', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+    <div style={{ textAlign: 'center', marginBottom: '24px' }}>
+      <div style={{ fontSize: '22px', fontWeight: 700, color: 'white', marginBottom: '6px' }}>XD Content Analyzer</div>
+      <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.65)' }}>Analyze your Figma designs for content style guide compliance and accessibility</div>
+    </div>
+    <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: '10px', padding: '20px 24px' }}>
+      <div style={{ fontSize: '14px', fontWeight: 600, color: 'white', marginBottom: '4px' }}>Analyze a Figma File's Content</div>
+      <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.55)', marginBottom: '12px' }}>Paste a Figma URL to check its content against style guide and accessibility rules.</div>
+      <div style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
+        <div style={{ flex: 1, background: 'white', borderRadius: '6px', padding: '10px 14px', fontSize: '13px', color: 'rgba(26,26,26,0.35)' }}>Paste your Figma file URL here...</div>
+        <div style={{ background: '#1a3a8f', border: '1px solid rgba(255,255,255,0.3)', color: 'white', borderRadius: '6px', padding: '10px 16px', fontSize: '13px', fontWeight: 600, whiteSpace: 'nowrap' }}>Load Pages</div>
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+        <div style={{ background: 'rgba(255,255,255,0.1)', borderRadius: '8px', padding: '16px' }}>
+          <div style={{ fontSize: '13px', fontWeight: 600, color: 'white', marginBottom: '10px' }}>Style Guide Rules for XD Content</div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '10px' }}>
+            <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px', textAlign: 'center' }}>
+              <div style={{ fontSize: '24px', fontWeight: 700, color: 'white' }}>164</div>
+              <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.5)', marginTop: '2px' }}>Best Practices</div>
+            </div>
+            <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px', textAlign: 'center' }}>
+              <div style={{ fontSize: '24px', fontWeight: 700, color: 'white' }}>130</div>
+              <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.5)', marginTop: '2px' }}>Things to Avoid</div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ background: 'rgba(255,255,255,0.15)', borderRadius: '4px', padding: '4px 10px', fontSize: '11px', color: 'white' }}>Manage Style Guide Rules</div>
+            <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.4)' }}>Last checked 1/3/2026</div>
+          </div>
+        </div>
+        <div style={{ background: 'rgba(255,255,255,0.1)', borderRadius: '8px', padding: '16px' }}>
+          <div style={{ fontSize: '13px', fontWeight: 600, color: 'white', marginBottom: '10px' }}>Accessibility Rules for XD Content</div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '10px' }}>
+            <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px', textAlign: 'center' }}>
+              <div style={{ fontSize: '24px', fontWeight: 700, color: 'white' }}>85</div>
+              <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.5)', marginTop: '2px' }}>Visual</div>
+            </div>
+            <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px', textAlign: 'center' }}>
+              <div style={{ fontSize: '24px', fontWeight: 700, color: 'white' }}>99</div>
+              <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.5)', marginTop: '2px' }}>Navigation & Input</div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ background: 'rgba(255,255,255,0.15)', borderRadius: '4px', padding: '4px 10px', fontSize: '11px', color: 'white' }}>Manage Accessibility Rules</div>
+            <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.4)' }}>Last updated 1/5/2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const ResultsSlide = () => (
+  <div style={{ padding: '52px 80px', display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', background: colors.background, fontFamily: 'DM Sans, sans-serif' }}>
+    <div style={{ fontSize: '12px', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: colors.accentPurple, marginBottom: '24px' }}>The results</div>
+    <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '56px', alignItems: 'start' }}>
+      <div>
+        <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 'clamp(28px, 3.5vw, 44px)', fontWeight: 700, color: colors.text, lineHeight: 1.15, marginBottom: '20px' }}>
+          The team didn't stop to transform. They transformed while shipping.
+        </div>
+        <div style={{ width: '40px', height: '2px', background: colors.accentPurple, marginBottom: '28px' }}></div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '16px' }}>
+          <div>
+            <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '36px', fontWeight: 700, color: colors.text }}>6</div>
+            <div style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', color: colors.textVeryMuted, marginTop: '4px' }}>Months</div>
+            <div style={{ fontSize: '12px', color: colors.textMuted, marginTop: '4px' }}>Pilot to scale</div>
+          </div>
+          <div>
+            <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '36px', fontWeight: 700, color: colors.text }}>8</div>
+            <div style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', color: colors.textVeryMuted, marginTop: '4px' }}>Pilots</div>
+            <div style={{ fontSize: '12px', color: colors.textMuted, marginTop: '4px' }}>Designed and tested</div>
+          </div>
+          <div>
+            <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '36px', fontWeight: 700, color: colors.teal }}>75%</div>
+            <div style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', color: colors.textVeryMuted, marginTop: '4px' }}>Time saved</div>
+            <div style={{ fontSize: '12px', color: colors.textMuted, marginTop: '4px' }}>At the task level</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style={{ fontSize: '11px', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '0.12em', color: colors.accentPurple, marginBottom: '24px' }}>AI adoption by workstream</div>
+        <div style={{ marginBottom: '24px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '8px' }}>
+            <div style={{ fontSize: '15px', color: colors.text }}>Content Design</div>
+            <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '32px', fontWeight: 700, color: colors.accentPurple }}>100%</div>
+          </div>
+          <div style={{ height: '8px', background: 'rgba(0,0,0,0.06)', borderRadius: '4px', overflow: 'hidden' }}>
+            <div style={{ height: '100%', width: '100%', background: colors.accentPurple, borderRadius: '4px' }}></div>
+          </div>
+        </div>
+        <div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '8px' }}>
+            <div style={{ fontSize: '15px', color: colors.text }}>UX Design</div>
+            <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '32px', fontWeight: 700, color: colors.accentPurple }}>50%</div>
+          </div>
+          <div style={{ height: '8px', background: 'rgba(0,0,0,0.06)', borderRadius: '4px', overflow: 'hidden' }}>
+            <div style={{ height: '100%', width: '50%', background: colors.accentPurple, borderRadius: '4px' }}></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
 export const buildSlides = (components: any) => {
   const { MainTitle, ChapterIntro, Statement, HeadlineVisual, HeadlineVisualCentered, HeadlineStats, FromTo, FullVisual, HeadlineFullWidth } = components;
 
@@ -125,7 +229,6 @@ export const buildSlides = (components: any) => {
     >
       <div className="flex items-center h-full">
         <div className="flex items-start gap-8">
-          {/* Product Managers */}
           {[1, 2, 3, 4].map((i) => (
             <div key={i} className="flex flex-col items-center gap-4">
               <User
@@ -133,40 +236,12 @@ export const buildSlides = (components: any) => {
                 strokeWidth={1.5}
                 style={{ color: colors.red, opacity: 0.7 }}
               />
-              <div
-                style={{
-                  fontFamily: 'DM Sans, sans-serif',
-                  fontSize: '18px',
-                  fontWeight: 500,
-                  color: colors.red,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.12em'
-                }}
-              >
-                PM
-              </div>
+              <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '18px', fontWeight: 500, color: colors.red, textTransform: 'uppercase', letterSpacing: '0.12em' }}>PM</div>
             </div>
           ))}
-
-          {/* Designer */}
           <div className="flex flex-col items-center gap-4">
-            <User
-              size={120}
-              strokeWidth={1.5}
-              style={{ color: colors.accentPurple }}
-            />
-            <div
-              style={{
-                fontFamily: 'DM Sans, sans-serif',
-                fontSize: '18px',
-                fontWeight: 500,
-                color: colors.accentPurple,
-                textTransform: 'uppercase',
-                letterSpacing: '0.12em'
-              }}
-            >
-              Designer
-            </div>
+            <User size={120} strokeWidth={1.5} style={{ color: colors.accentPurple }} />
+            <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '18px', fontWeight: 500, color: colors.accentPurple, textTransform: 'uppercase', letterSpacing: '0.12em' }}>Designer</div>
           </div>
         </div>
       </div>
@@ -177,46 +252,32 @@ export const buildSlides = (components: any) => {
       key="8"
       headline="The issues were systemic."
     >
-      <img
-        src={systemicIssuesImg}
-        alt="Workflow diagram showing systemic issues"
-        style={{
-          maxWidth: '100%',
-          maxHeight: '100%',
-          objectFit: 'contain'
-        }}
-      />
+      <div className="flex items-center justify-center h-full">
+        <DesignRhythmCircle />
+      </div>
     </HeadlineFullWidth>,
 
     // Slide 9: The backlog as forcing function
     <HeadlineFullWidth
-      key="10"
+      key="9"
       eyebrow="The backlog as a forcing function"
       headline="If it's not in the backlog, it doesn't get design time."
     >
       <AsanaIntakeLog />
     </HeadlineFullWidth>,
 
-    // Slide 10: Operating rhythms
+    // Slide 10: Intake Form
     <HeadlineFullWidth
-      key="11"
+      key="10"
       eyebrow="Intake Form"
       headline="Sometimes friction can be good."
     >
-      <img
-        src={slackTaskCreationImg}
-        alt="Slack task creation interface"
-        style={{
-          maxWidth: '100%',
-          maxHeight: '100%',
-          objectFit: 'contain'
-        }}
-      />
+      <img src={slackTaskCreationImg} alt="Slack task creation interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
     // Slide 11: Micro impact
     <HeadlineFullWidth
-      key="12"
+      key="11"
       eyebrow="Micro impact"
       headline="Designers got their time and autonomy back."
     >
@@ -237,7 +298,7 @@ export const buildSlides = (components: any) => {
       author="Content Designer"
     />,
 
-    // Slide 15: Organizational impact
+    // Slide 14: Organizational impact
     <HeadlineFullWidth
       key="14"
       eyebrow="Organizational impact"
@@ -248,9 +309,9 @@ export const buildSlides = (components: any) => {
 
     // CHAPTER 2: AI PILOTS
 
-    // Slide 16: Chapter 2 Intro
+    // Slide 15: Chapter 2 Intro
     <ChapterIntro
-      key="7"
+      key="15"
       eyebrow="Case Study 02"
       title="AI Pilots"
       subtitle=""
@@ -259,24 +320,16 @@ export const buildSlides = (components: any) => {
 
     // Slide 16: The gap
     <HeadlineVisual
-      key="7"
+      key="16"
       eyebrow="The gap"
       headline="Every tech company is racing to adopt AI."
     >
-      <img
-        src={workingTooMuchGif}
-        alt="Working too much"
-        style={{
-          maxWidth: '100%',
-          maxHeight: '500px',
-          borderRadius: '12px'
-        }}
-      />
+      <img src={workingTooMuchGif} alt="Working too much" style={{ maxWidth: '100%', maxHeight: '500px', borderRadius: '12px' }} />
     </HeadlineVisual>,
 
     // Slide 17: Program design
     <HeadlineFullWidth
-      key="7"
+      key="17"
       eyebrow="My Role"
       headline="I designed the program before anyone built anything."
     >
@@ -285,7 +338,7 @@ export const buildSlides = (components: any) => {
 
     // Slide 18: Discovery
     <HeadlineFullWidth
-      key="7"
+      key="18"
       eyebrow="Discovery"
       headline="Workshop results identified clear points of friction across the PDLC."
     >
@@ -294,7 +347,7 @@ export const buildSlides = (components: any) => {
 
     // Slide 19: The diagnosis
     <HeadlineFullWidth
-      key="7"
+      key="19"
       eyebrow="The diagnosis"
       headline="Engagement survey results supported the workshop findings."
     >
@@ -303,169 +356,107 @@ export const buildSlides = (components: any) => {
 
     // Slide 20: Brainstorming solutions
     <HeadlineFullWidth
-      key="7"
+      key="20"
       eyebrow="The brainstorm"
       headline="Teams brainstormed a mix of solutions to resolve pain felt across each phase."
     >
       <SolutionsBrainstorm />
     </HeadlineFullWidth>,
 
-    // Slide 21: Case study 01
+    // Slide 21: Case study 01 - PRD to Design Brief
     <HeadlineFullWidth
-      key="7"
+      key="21"
       eyebrow="Case study 01"
       headline="PRD to Design Brief"
     >
-      <img
-        src={prdDesignBriefImg}
-        alt="PRD Design Synthesizer interface"
-        style={{
-          maxWidth: '100%',
-          maxHeight: '100%',
-          objectFit: 'contain'
-        }}
-      />
+      <img src={prdDesignBriefImg} alt="PRD Design Synthesizer interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 22: Case study 02
+    // Slide 22: Case study 02 - Legal Review
     <HeadlineFullWidth
-      key="7"
+      key="22"
       eyebrow="Case study 02"
       headline="Streamlining legal review."
     >
-      <img
-        src={legalAssistantImg}
-        alt="UK CDA Assistant interface"
-        style={{
-          maxWidth: '100%',
-          maxHeight: '100%',
-          objectFit: 'contain'
-        }}
-      />
+      <img src={legalAssistantImg} alt="UK CDA Assistant interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 23: Case study 03
-    <HeadlineFullWidth
-      key="7"
+    // Slide 23: Case study 03 - Agentic Editor (NEW)
+    <HeadlineVisual
+      key="23"
       eyebrow="Case study 03"
+      headline="Scaling content standards across every Figma file."
+    >
+      <XDContentAnalyzer />
+    </HeadlineVisual>,
+
+    // Slide 24: Case study 04 - Agentic Ideation
+    <HeadlineFullWidth
+      key="24"
+      eyebrow="Case study 04"
       headline="Rapid exploration without losing momentum."
     >
-      <img
-        src={agenticIdeationImg}
-        alt="Agentic ideation interface"
-        style={{
-          maxWidth: '100%',
-          maxHeight: '100%',
-          objectFit: 'contain'
-        }}
-      />
+      <img src={agenticIdeationImg} alt="Agentic ideation interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 24: Case study 04
+    // Slide 25: Case study 05 - Vibe Prototyping
     <HeadlineFullWidth
-      key="7"
-      eyebrow="Case study 04"
+      key="25"
+      eyebrow="Case study 05"
       headline="Test, learn, and ship faster."
     >
-      <img
-        src={vibePrototypingImg}
-        alt="Vibe prototyping interface"
-        style={{
-          maxWidth: '100%',
-          maxHeight: '100%',
-          objectFit: 'contain'
-        }}
-      />
+      <img src={vibePrototypingImg} alt="Vibe prototyping interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 25: The results
-    <HeadlineStats
-      key="7"
-      eyebrow="The results"
-      headline={{ text: "The team didn't stop to transform. They transformed while shipping.", italic: false }}
-      stats={[
-        { label: "months", value: "6", description: "From pilot to scale" },
-        { label: "pilots", value: "8", description: "Designed and tested" },
-        { label: "workstreams", value: "9/25", description: "Adopted AI tools" },
-        { label: "time saved", value: "75-84%", description: "At the task level", color: colors.teal }
-      ]}
-    />,
+    // Slide 26: The results (redesigned)
+    <ResultsSlide key="26" />,
 
     // CHAPTER 3: TOOLS I BUILD
 
-    // Slide 26: Chapter 3 Intro
+    // Slide 27: Chapter 3 Intro
     <ChapterIntro
-      key="7"
+      key="27"
       eyebrow="Case Study 03"
       title="What I Build Personally"
       subtitle=""
       ghostNumber="03"
     />,
 
-    // Slide 27: Capacity Planner - Beginning
+    // Slide 28: Capacity Planner - Beginning
     <Statement
-      key="7"
+      key="28"
       text="Do we have enough designers?"
     />,
 
-    // Slide 28: Capacity Planner - The tool
+    // Slide 29: Capacity Planner - The tool
     <HeadlineVisual
-      key="7"
+      key="29"
       eyebrow="Capacity Planner — The tool"
       headline="Forecasting is easier with a smart calculator."
     >
       <div className="flex items-center justify-center h-full">
-        <div
-          className="text-center"
-          style={{
-            fontFamily: 'DM Sans, sans-serif',
-            fontSize: '24px',
-            fontWeight: 400,
-            color: colors.text
-          }}
-        >
-          <div className="mb-6" style={{ fontSize: '16px', color: colors.textMuted, textTransform: 'uppercase', letterSpacing: '0.12em' }}>
-            Live Demo
-          </div>
-          <a
-            href="https://capacity-planner.netlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: 'inline-block',
-              textDecoration: 'none'
-            }}
-          >
+        <div className="text-center" style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '24px', fontWeight: 400, color: colors.text }}>
+          <div className="mb-6" style={{ fontSize: '16px', color: colors.textMuted, textTransform: 'uppercase', letterSpacing: '0.12em' }}>Live Demo</div>
+          <a href="https://capacity-planner.netlify.app" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', textDecoration: 'none' }}>
             <img
               src={capacityPlannerImg}
               alt="Capacity Planner application"
-              style={{
-                maxWidth: '900px',
-                maxHeight: '500px',
-                borderRadius: '8px',
-                boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-                cursor: 'pointer',
-                transition: 'transform 0.2s ease'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'scale(1.02)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
+              style={{ maxWidth: '900px', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)', cursor: 'pointer', transition: 'transform 0.2s ease' }}
+              onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.02)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
             />
           </a>
         </div>
       </div>
     </HeadlineVisual>,
 
-    // Slide 29: Rose - Beginning
+    // Slide 30: Rose - Beginning
     <Statement
-      key="7"
+      key="30"
       text="Feedback can sometimes be hard and confusing."
     />,
 
-    // Slide 30: Rose - The interface
+    // Slide 31: Rose - The interface
     <HeadlineVisual
       key="31"
       eyebrow="Rose — The product"
@@ -476,13 +467,13 @@ export const buildSlides = (components: any) => {
       </div>
     </HeadlineVisual>,
 
-    // Slide 31: Rose - The question
+    // Slide 32: Daily Digest - The question
     <Statement
       key="32"
       text="How can I keep up with all of the news in AI and hone in on what's most important?"
     />,
 
-    // Slide 32: Daily Digest - The tool
+    // Slide 33: Daily Digest - The tool
     <HeadlineFullWidth
       key="33"
       eyebrow="Daily Digest — The tool"
@@ -496,7 +487,7 @@ export const buildSlides = (components: any) => {
 
     // CLOSING
 
-    // Slide 33: Contact
+    // Slide 34: Contact
     <HeadlineFullWidth
       key="34"
       eyebrow=""
@@ -505,7 +496,7 @@ export const buildSlides = (components: any) => {
       <ContactCard />
     </HeadlineFullWidth>,
 
-    // Slide 34: My Why
+    // Slide 35: My Why
     <Statement
       key="35"
       text="My Why"

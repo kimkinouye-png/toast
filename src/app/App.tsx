@@ -986,7 +986,7 @@ const speakerNotes = [
   "",
 
   // Slide 14
-  "",
+  "The system scaled — and became the operating standard for the entire org. Every design team at PayPal eventually mirrored the structure I built for the first team. And this Ways of Working system became the foundation that made the AI pilot program possible. You can't measure improvement without a baseline.",
 
   // Slide 15
   "The system scaled — and became the operating standard for the entire org. Every design team at PayPal eventually mirrored the structure I built for the first team. And this Ways of Working system became the foundation that made the AI pilot program possible. You can't measure improvement without a baseline.",
