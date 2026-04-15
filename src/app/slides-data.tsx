@@ -25,6 +25,7 @@ import listeningGif from '../imports/Observe_I_See_GIF_by_Cool_Cats.gif';
 import workingTooMuchGif from '../imports/Working_Too_Much_GIF_by_Mino_Games.gif';
 import prdDesignBriefImg from '../imports/Screenshot_2026-04-12_at_6.42.40 PM.png';
 import legalAssistantImg from '../imports/Screenshot_2026-04-12_at_6.44.37 PM.png';
+import agenticIdeationImg from '../imports/Screenshot_2026-04-12_at_6.43.15 PM.png';
 import vibePrototypingImg from '../imports/Screenshot_2026-04-12_at_6.44.02 PM.png';
 import capacityPlannerImg from '../imports/Screenshot_2026-04-13_at_8.20.11 AM.png';
 import roseUIImg from '../imports/Screenshot_2026-04-13_at_8.29.04 AM.png';
@@ -311,7 +312,16 @@ export const buildSlides = (components: any) => {
       <img src={legalAssistantImg} alt="UK CDA Assistant interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 22: Case study 04 - Vibe Prototyping
+    // Slide 22: Case study 03 - Agentic Ideation
+    <HeadlineFullWidth
+      key="24"
+      eyebrow="Case study 03"
+      headline="Rapid exploration without losing momentum."
+    >
+      <img src={agenticIdeationImg} alt="Agentic ideation interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+    </HeadlineFullWidth>,
+
+    // Slide 23: Case study 04 - Vibe Prototyping
     <HeadlineFullWidth
       key="25"
       eyebrow="Case study 04"
@@ -320,12 +330,12 @@ export const buildSlides = (components: any) => {
       <img src={vibePrototypingImg} alt="Vibe prototyping interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 23: The results (redesigned)
+    // Slide 24: The results (redesigned)
     <ResultsSlide key="26" />,
 
     // CHAPTER 3: TOOLS I BUILD
 
-    // Slide 24: Chapter 3 Intro
+    // Slide 25: Chapter 3 Intro
     <ChapterIntro
       key="27"
       eyebrow="Case Study 03"
@@ -334,13 +344,13 @@ export const buildSlides = (components: any) => {
       ghostNumber="03"
     />,
 
-    // Slide 25: Capacity Planner - Beginning
+    // Slide 26: Capacity Planner - Beginning
     <Statement
       key="28"
       text="Do we have enough designers?"
     />,
 
-    // Slide 26: Capacity Planner - The tool
+    // Slide 27: Capacity Planner - The tool
     <HeadlineVisual
       key="29"
       eyebrow="Capacity Planner — The tool"
@@ -362,13 +372,13 @@ export const buildSlides = (components: any) => {
       </div>
     </HeadlineVisual>,
 
-    // Slide 27: Rose - Beginning
+    // Slide 28: Rose - Beginning
     <Statement
       key="30"
       text="Feedback can sometimes be hard and confusing."
     />,
 
-    // Slide 28: Rose - The interface
+    // Slide 29: Rose - The interface
     <HeadlineVisual
       key="31"
       eyebrow="Rose — The product"
@@ -379,13 +389,13 @@ export const buildSlides = (components: any) => {
       </div>
     </HeadlineVisual>,
 
-    // Slide 29: Daily Digest - The question
+    // Slide 30: Daily Digest - The question
     <Statement
       key="32"
       text="How can I keep up with all of the news in AI and hone in on what's most important?"
     />,
 
-    // Slide 30: Daily Digest - The tool
+    // Slide 31: Daily Digest - The tool
     <HeadlineFullWidth
       key="33"
       eyebrow="Daily Digest — The tool"
@@ -399,7 +409,7 @@ export const buildSlides = (components: any) => {
 
     // CLOSING
 
-    // Slide 31: Contact
+    // Slide 32: Contact
     <HeadlineFullWidth
       key="34"
       eyebrow=""
@@ -408,7 +418,7 @@ export const buildSlides = (components: any) => {
       <ContactCard />
     </HeadlineFullWidth>,
 
-    // Slide 32: My Why
+    // Slide 33: My Why
     <Statement
       key="35"
       text="My Why"
