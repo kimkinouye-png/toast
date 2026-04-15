@@ -350,6 +350,15 @@ export const buildSlides = (components: any) => {
       <AIAdoptionModel />
     </HeadlineFullWidth>,
 
+    // Slide 18b: Test Plan & Results
+    <HeadlineFullWidth
+      key="18b"
+      eyebrow="Test plan & results"
+      headline="Every pilot was measured before it was built."
+    >
+      <PilotTestPlan />
+    </HeadlineFullWidth>,
+    
     // Slide 18: Discovery
     <HeadlineFullWidth
       key="18"
@@ -517,3 +526,5 @@ export const buildSlides = (components: any) => {
     />
   ];
 };
+
+
