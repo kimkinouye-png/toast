@@ -23,6 +23,7 @@ import { User } from 'lucide-react';
 import { DrowningDesigner } from './components/drowning-designer';
 import listeningGif from '../imports/Observe_I_See_GIF_by_Cool_Cats.gif';
 import workingTooMuchGif from '../imports/Working_Too_Much_GIF_by_Mino_Games.gif';
+import panicGif from '../imports/Panic_Omg_GIF__1_.gif';
 import prdDesignBriefImg from '../imports/Screenshot_2026-04-12_at_6.42.40 PM.png';
 import legalAssistantImg from '../imports/Screenshot_2026-04-12_at_6.44.37 PM.png';
 import agenticIdeationImg from '../imports/Screenshot_2026-04-12_at_6.43.15 PM.png';
@@ -264,7 +265,7 @@ export const buildSlides = (components: any) => {
       eyebrow="The gap"
       headline="Every tech company is racing to adopt AI."
     >
-      <img src={workingTooMuchGif} alt="Working too much" style={{ maxWidth: '100%', maxHeight: '500px', borderRadius: '12px' }} />
+      <img src={panicGif} alt="Panic gif" style={{ maxWidth: '100%', maxHeight: '700px', borderRadius: '12px' }} />
     </HeadlineVisual>,
 
     // Slide 17: Program design

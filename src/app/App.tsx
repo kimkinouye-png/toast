@@ -1249,21 +1249,6 @@ export default function App() {
           {speakerNotes[currentSlide]}
         </div>
       </div>
-
-      {/* Keyboard shortcuts hint */}
-      <div
-        className="absolute bottom-8 left-8 px-4 py-2 rounded-lg opacity-40 hover:opacity-100 transition-opacity"
-        style={{
-          fontFamily: 'DM Sans, sans-serif',
-          fontSize: '11px',
-          fontWeight: 400,
-          backgroundColor: colors.surface,
-          border: `1px solid ${colors.border}`,
-          color: colors.textMuted
-        }}
-      >
-        <span style={{ fontWeight: 500 }}>S</span> Speaker Notes · <span style={{ fontWeight: 500 }}>T</span> Templates · <span style={{ fontWeight: 500 }}>B</span> Backgrounds
-      </div>
     </div>
   );
 }
