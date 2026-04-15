@@ -230,23 +230,14 @@ export const buildSlides = (components: any) => {
       eyebrow="The human cost"
       headline="Designers were drowning. And no one could see it."
     >
-      <div className="flex items-center h-full">
-        <div className="flex items-start gap-8">
-          {[1, 2, 3, 4].map((i) => (
-            <div key={i} className="flex flex-col items-center gap-4">
-              <User
-                size={120}
-                strokeWidth={1.5}
-                style={{ color: colors.red, opacity: 0.7 }}
-              />
-              <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '18px', fontWeight: 500, color: colors.red, textTransform: 'uppercase', letterSpacing: '0.12em' }}>PM</div>
-            </div>
-          ))}
-          <div className="flex flex-col items-center gap-4">
-            <User size={120} strokeWidth={1.5} style={{ color: colors.accentPurple }} />
-            <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '18px', fontWeight: 500, color: colors.accentPurple, textTransform: 'uppercase', letterSpacing: '0.12em' }}>Designer</div>
+      <div className="flex items-center justify-center h-full gap-16">
+        {[1, 2, 3, 4].map((i) => (
+          <div key={i} className="flex flex-col items-center gap-4">
+            <User size={120} strokeWidth={1.5} style={{ color: '#d43f3e', opacity: 0.7 }} />
+            <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '18px', fontWeight: 500, color: '#d43f3e', textTransform: 'uppercase', letterSpacing: '0.12em' }}>PM</div>
           </div>
-        </div>
+        ))}
+        <DrowningDesigner />
       </div>
     </FullVisual>,
 
