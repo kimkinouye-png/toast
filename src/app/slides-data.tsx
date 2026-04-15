@@ -25,7 +25,6 @@ import listeningGif from '../imports/Observe_I_See_GIF_by_Cool_Cats.gif';
 import workingTooMuchGif from '../imports/Working_Too_Much_GIF_by_Mino_Games.gif';
 import prdDesignBriefImg from '../imports/Screenshot_2026-04-12_at_6.42.40 PM.png';
 import legalAssistantImg from '../imports/Screenshot_2026-04-12_at_6.44.37 PM.png';
-import agenticIdeationImg from '../imports/Screenshot_2026-04-12_at_6.43.15 PM.png';
 import vibePrototypingImg from '../imports/Screenshot_2026-04-12_at_6.44.02 PM.png';
 import capacityPlannerImg from '../imports/Screenshot_2026-04-13_at_8.20.11 AM.png';
 import roseUIImg from '../imports/Screenshot_2026-04-13_at_8.29.04 AM.png';
@@ -50,59 +49,6 @@ const colors = {
   border: 'rgba(0,0,0,0.12)',
   ghost: 'rgba(26,26,26,0.04)'
 };
-
-const XDContentAnalyzer = () => (
-  <div style={{ background: '#1a3a8f', borderRadius: '12px', padding: '32px 40px', fontFamily: 'DM Sans, sans-serif', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-    <div style={{ textAlign: 'center', marginBottom: '24px' }}>
-      <div style={{ fontSize: '22px', fontWeight: 700, color: 'white', marginBottom: '6px' }}>XD Content Analyzer</div>
-      <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.65)' }}>Analyze your Figma designs for content style guide compliance and accessibility</div>
-    </div>
-    <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: '10px', padding: '20px 24px' }}>
-      <div style={{ fontSize: '14px', fontWeight: 600, color: 'white', marginBottom: '4px' }}>Analyze a Figma File's Content</div>
-      <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.55)', marginBottom: '12px' }}>Paste a Figma URL to check its content against style guide and accessibility rules.</div>
-      <div style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
-        <div style={{ flex: 1, background: 'white', borderRadius: '6px', padding: '10px 14px', fontSize: '13px', color: 'rgba(26,26,26,0.35)' }}>Paste your Figma file URL here...</div>
-        <div style={{ background: '#1a3a8f', border: '1px solid rgba(255,255,255,0.3)', color: 'white', borderRadius: '6px', padding: '10px 16px', fontSize: '13px', fontWeight: 600, whiteSpace: 'nowrap' }}>Load Pages</div>
-      </div>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
-        <div style={{ background: 'rgba(255,255,255,0.1)', borderRadius: '8px', padding: '16px' }}>
-          <div style={{ fontSize: '13px', fontWeight: 600, color: 'white', marginBottom: '10px' }}>Style Guide Rules for XD Content</div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '10px' }}>
-            <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px', textAlign: 'center' }}>
-              <div style={{ fontSize: '24px', fontWeight: 700, color: 'white' }}>164</div>
-              <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.5)', marginTop: '2px' }}>Best Practices</div>
-            </div>
-            <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px', textAlign: 'center' }}>
-              <div style={{ fontSize: '24px', fontWeight: 700, color: 'white' }}>130</div>
-              <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.5)', marginTop: '2px' }}>Things to Avoid</div>
-            </div>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div style={{ background: 'rgba(255,255,255,0.15)', borderRadius: '4px', padding: '4px 10px', fontSize: '11px', color: 'white' }}>Manage Style Guide Rules</div>
-            <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.4)' }}>Last checked 1/3/2026</div>
-          </div>
-        </div>
-        <div style={{ background: 'rgba(255,255,255,0.1)', borderRadius: '8px', padding: '16px' }}>
-          <div style={{ fontSize: '13px', fontWeight: 600, color: 'white', marginBottom: '10px' }}>Accessibility Rules for XD Content</div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '10px' }}>
-            <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px', textAlign: 'center' }}>
-              <div style={{ fontSize: '24px', fontWeight: 700, color: 'white' }}>85</div>
-              <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.5)', marginTop: '2px' }}>Visual</div>
-            </div>
-            <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px', textAlign: 'center' }}>
-              <div style={{ fontSize: '24px', fontWeight: 700, color: 'white' }}>99</div>
-              <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.5)', marginTop: '2px' }}>Navigation & Input</div>
-            </div>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div style={{ background: 'rgba(255,255,255,0.15)', borderRadius: '4px', padding: '4px 10px', fontSize: '11px', color: 'white' }}>Manage Accessibility Rules</div>
-            <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.4)' }}>Last updated 1/5/2026</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-);
 
 const ResultsSlide = () => (
   <div style={{ padding: '52px 80px', display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', background: colors.background, fontFamily: 'DM Sans, sans-serif' }}>
@@ -365,39 +311,21 @@ export const buildSlides = (components: any) => {
       <img src={legalAssistantImg} alt="UK CDA Assistant interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 22: Case study 03 - Agentic Editor (NEW)
-    <HeadlineVisual
-      key="23"
-      eyebrow="Case study 03"
-      headline="Scaling content standards across every Figma file."
-    >
-      <XDContentAnalyzer />
-    </HeadlineVisual>,
-
-    // Slide 23: Case study 04 - Agentic Ideation
-    <HeadlineFullWidth
-      key="24"
-      eyebrow="Case study 04"
-      headline="Rapid exploration without losing momentum."
-    >
-      <img src={agenticIdeationImg} alt="Agentic ideation interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
-    </HeadlineFullWidth>,
-
-    // Slide 24: Case study 05 - Vibe Prototyping
+    // Slide 22: Case study 04 - Vibe Prototyping
     <HeadlineFullWidth
       key="25"
-      eyebrow="Case study 05"
+      eyebrow="Case study 04"
       headline="Test, learn, and ship faster."
     >
       <img src={vibePrototypingImg} alt="Vibe prototyping interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
     </HeadlineFullWidth>,
 
-    // Slide 25: The results (redesigned)
+    // Slide 23: The results (redesigned)
     <ResultsSlide key="26" />,
 
     // CHAPTER 3: TOOLS I BUILD
 
-    // Slide 26: Chapter 3 Intro
+    // Slide 24: Chapter 3 Intro
     <ChapterIntro
       key="27"
       eyebrow="Case Study 03"
@@ -406,13 +334,13 @@ export const buildSlides = (components: any) => {
       ghostNumber="03"
     />,
 
-    // Slide 27: Capacity Planner - Beginning
+    // Slide 25: Capacity Planner - Beginning
     <Statement
       key="28"
       text="Do we have enough designers?"
     />,
 
-    // Slide 28: Capacity Planner - The tool
+    // Slide 26: Capacity Planner - The tool
     <HeadlineVisual
       key="29"
       eyebrow="Capacity Planner — The tool"
@@ -434,13 +362,13 @@ export const buildSlides = (components: any) => {
       </div>
     </HeadlineVisual>,
 
-    // Slide 29: Rose - Beginning
+    // Slide 27: Rose - Beginning
     <Statement
       key="30"
       text="Feedback can sometimes be hard and confusing."
     />,
 
-    // Slide 30: Rose - The interface
+    // Slide 28: Rose - The interface
     <HeadlineVisual
       key="31"
       eyebrow="Rose — The product"
@@ -451,13 +379,13 @@ export const buildSlides = (components: any) => {
       </div>
     </HeadlineVisual>,
 
-    // Slide 31: Daily Digest - The question
+    // Slide 29: Daily Digest - The question
     <Statement
       key="32"
       text="How can I keep up with all of the news in AI and hone in on what's most important?"
     />,
 
-    // Slide 32: Daily Digest - The tool
+    // Slide 30: Daily Digest - The tool
     <HeadlineFullWidth
       key="33"
       eyebrow="Daily Digest — The tool"
@@ -471,7 +399,7 @@ export const buildSlides = (components: any) => {
 
     // CLOSING
 
-    // Slide 33: Contact
+    // Slide 31: Contact
     <HeadlineFullWidth
       key="34"
       eyebrow=""
@@ -480,7 +408,7 @@ export const buildSlides = (components: any) => {
       <ContactCard />
     </HeadlineFullWidth>,
 
-    // Slide 34: My Why
+    // Slide 32: My Why
     <Statement
       key="35"
       text="My Why"

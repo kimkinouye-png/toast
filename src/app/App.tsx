@@ -944,7 +944,7 @@ const RoseDiagram = () => (
   </div>
 );
 
-// Speaker notes for each slide (34 slides)
+// Speaker notes for each slide (32 slides)
 const speakerNotes = [
   // Slide 1
   "Thank you all for having me. I'm Kim — a design operations leader at PayPal, where I've spent the last four years building how the design org operates. I currently support our agentic product team and run an AI pilot program intended to evolve the ways of working. Today I'll walk you through some of that work. I want this to feel like a conversation, so please ask questions as we go.",
@@ -1010,7 +1010,7 @@ const speakerNotes = [
   "Legal and compliance review at PayPal is complex. Every piece of consumer-facing content must be reviewed. For global launches that multiplies by region. I researched the problem by talking directly to content ops and the Jira manager — they had deep institutional knowledge. The root cause was simple: wrong templates triggering wrong lawyers. Tickets sitting ignored for days. The MCP agent identifies the correct template, fills it completely — no tired eyes, no missed checkboxes, no wrong routing. Error rate: zero. The MCP agent fixes the intake, not the review.",
 
   // Slide 22
-  "Rapid exploration without losing momentum. Agentic ideation allows designers to test multiple directions quickly before committing to a single path.",
+  "Vibe prototyping: test multiple directions quickly, learn what works, and ship faster — without losing momentum on the roadmap.",
 
   // Slide 23
   "Six months in. Eight pilots designed and tested. Nine of twenty-five workstreams adopted without stopping to ship. Time savings of 75 to 84 percent at the task level. This is what responsible AI transformation looks like inside a regulated fintech company.",
@@ -1034,18 +1034,12 @@ const speakerNotes = [
   "How can I keep up with all the news in AI and hone in on what's most important? This question led to building the Daily Digest tool.",
 
   // Slide 30
-  "The Daily Digest pulls from 16 curated RSS feeds, uses Claude to summarize and synthesize, then groups the top stories by topic. It's an AI-curated daily briefing that cuts through the noise.",
+  "The Daily Digest pulls from 16 curated RSS feeds, uses Claude to summarize and synthesize, then groups the top stories by topic. It's an AI-curated daily briefing — built so you can keep up with AI news without drowning in it.",
 
   // Slide 31
-  "Rose — the product: making feedback less confusing and more actionable. Built on the Claude API with a curated knowledge base and human-in-the-loop research through Stem.",
-
-  // Slide 32
-  "Daily Digest — the tool: pulls from curated RSS feeds, uses Claude to summarize and group top stories by topic so you can keep up with AI news without drowning in it.",
-
-  // Slide 33
   "Visit my site for more examples and case studies. Here are five tools I've built on my own time — Capacity Planner, Rose, Stem, Aperi, and Daily Digest. Each one addresses a real problem I saw worth solving. You can find live demos and detailed case studies for each project on my website.",
 
-  // Slide 34
+  // Slide 32
   "My Why. I want to close with something personal. I don't do this work because it's my job. I do it because I genuinely believe that the difference between a team that's thriving and a team that's drowning is often infrastructure — not talent, not effort, not intentions. Just the absence of systems that let people do their best work. That's what I build."
 ];
 
