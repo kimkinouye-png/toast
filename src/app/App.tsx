@@ -973,7 +973,7 @@ const speakerNotes = [
   "One of the biggest shifts I introduced was the design backlog — and it came with a single rule: if it's not in the backlog, it doesn't get design time. To get into the backlog, the work had to be defined. That single rule changed the relationship between design and product. I owned the gatekeeper role myself initially, absorbing the political friction so designers could focus on the work.",
 
   // Slide 9
-  "One of the biggest shifts I introduced was the design backlog — and it came with a single rule: if it's not in the backlog, it doesn't get design time. To get into the backlog, the work had to be defined. That single rule changed the relationship between design and product. I owned the gatekeeper role myself initially, absorbing the political friction so designers could focus on the work.",
+  "The full Ways of Working system: shared portfolios, intake, backlogs, and rituals—one operating model teams could replicate as the org scaled.",
 
   // Slide 10
   "I built the operating rhythms around the team's existing behavior. I introduced meetings incrementally — one team at a time, starting with the teams most ready for structure. I updated Asana myself for the first weeks to demonstrate value before asking the team to own it. I empowered teams to adapt the system — and then the whole org mirrored the model.",
@@ -1045,10 +1045,10 @@ const speakerNotes = [
   "Visit my site for more examples and case studies. Here are five tools I've built on my own time — Capacity Planner, Rose, Stem, Aperi, and Daily Digest. Each one addresses a real problem I saw worth solving. You can find live demos and detailed case studies for each project on my website.",
 
   // Slide 33
-  "My Why. I want to close with something personal. I don't do this work because it's my job. I do it because I genuinely believe that the difference between a team that's thriving and a team that's drowning is often infrastructure — not talent, not effort, not intentions. Just the absence of systems that let people do their best work. That's what I build.",
+  "My Why, I grew up, playing the cello, building computers with my dad, I studied Mathematics in college, and during lockdown I went back to grad school for a degree in Data visualization. I love technology and design, I love working with designers, and I hope to bring some of that magic and sense making to Toast.",
 
   // Slide 34
-  "I consider myself someone who can turn operational chaos into systems that scale. I told Figma Make to create an image that illustrated something that started in chaos and became orderly, and I didn't like any of it because it was static and the shapes were too uniform. What i like about this animation is that is is constantly moving in beautiful patterns. Teams are dynamic, they are shifting and evolving with the work; and the ebb and flow of business."
+  "My Why. I want to close with something personal. I don't do this work because it's my job. I do it because I genuinely believe that the difference between a team that's thriving and a team that's drowning is often infrastructure — not talent, not effort, not intentions. Just the absence of systems that let people do their best work. That's what I build."
 ];
 
 // Main slideshow component

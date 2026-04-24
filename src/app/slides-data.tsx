@@ -2,7 +2,7 @@ import { VisualPlaceholder } from './components/visual-placeholder';
 import { EfficiencyChart } from './components/efficiency-chart';
 import { ChaosToOrder } from './components/chaos-to-order';
 import { AsanaBacklog } from './components/asana-backlog';
-import { AsanaIntakeLog } from './components/asana-intake-log';
+import { AsanaPwVBacklog } from './components/asana-pwv-backlog';
 import { AsanaPortfolio } from './components/asana-portfolio';
 import { AsanaAllPortfolios } from './components/asana-all-portfolios';
 import { MeetingEvolution } from './components/meeting-evolution';
@@ -34,7 +34,7 @@ import dailyDigestLandingImg from '../imports/Screenshot_2026-04-13_at_8.33.51 A
 import dailyDigestOutputImg from '../imports/Screenshot_2026-04-13_at_8.33.36 AM.png';
 import thingsBuiltImg from '../imports/Screenshot_2026-04-13_at_9.25.32 AM.png';
 import portfolioOverviewImg from '../imports/image-1.png';
-import slackTaskCreationImg from '../imports/image-3.png';
+import waysOfWorkingOverviewImg from '../imports/ways-of-working-overview.png';
 import { BacklogProcessFlow } from './components/backlog-process-flow';
 import { PilotTestPlan } from './components/pilot-test-plan';
 
@@ -60,24 +60,7 @@ const ResultsSlide = () => (
         <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 'clamp(28px, 3.5vw, 44px)', fontWeight: 700, color: colors.text, lineHeight: 1.15, marginBottom: '20px' }}>
           The team didn't stop to transform. They transformed while shipping.
         </div>
-        <div style={{ width: '40px', height: '2px', background: colors.accentPurple, marginBottom: '28px' }}></div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '16px' }}>
-          <div>
-            <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '36px', fontWeight: 700, color: colors.text }}>6</div>
-            <div style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', color: colors.textVeryMuted, marginTop: '4px' }}>Months</div>
-            <div style={{ fontSize: '12px', color: colors.textMuted, marginTop: '4px' }}>Pilot to scale</div>
-          </div>
-          <div>
-            <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '36px', fontWeight: 700, color: colors.text }}>8</div>
-            <div style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', color: colors.textVeryMuted, marginTop: '4px' }}>Pilots</div>
-            <div style={{ fontSize: '12px', color: colors.textMuted, marginTop: '4px' }}>Designed and tested</div>
-          </div>
-          <div>
-            <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: '36px', fontWeight: 700, color: colors.teal }}>75%</div>
-            <div style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', color: colors.textVeryMuted, marginTop: '4px' }}>Time saved</div>
-            <div style={{ fontSize: '12px', color: colors.textMuted, marginTop: '4px' }}>At the task level</div>
-          </div>
-        </div>
+        <div style={{ width: '40px', height: '2px', background: colors.accentPurple }}></div>
       </div>
       <div>
         <div style={{ fontSize: '11px', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '0.12em', color: colors.accentPurple, marginBottom: '24px' }}>AI adoption by workstream</div>
@@ -193,16 +176,20 @@ export const buildSlides = (components: any) => {
       eyebrow="The backlog as a forcing function"
       headline="If it's not in the backlog, it doesn't get design time."
     >
-      <AsanaIntakeLog />
+      <AsanaPwVBacklog />
     </HeadlineFullWidth>,
 
-    // Slide 9: Intake Form
+    // Slide 9: Ways of Working system overview
     <HeadlineFullWidth
-      key="10"
-      eyebrow="Intake Form"
-      headline="Sometimes friction can be good."
+      key="14b"
+      eyebrow="The full system"
+      headline="One operating model. Built to scale."
     >
-      <img src={slackTaskCreationImg} alt="Slack task creation interface" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+      <img
+        src={waysOfWorkingOverviewImg}
+        alt="Ways of Working system overview"
+        style={{ width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center' }}
+      />
     </HeadlineFullWidth>,
 
     // Slide 10: New Process

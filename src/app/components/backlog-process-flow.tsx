@@ -11,7 +11,7 @@ export const BacklogProcessFlow = () => (
     {/* Column headers */}
     <text x="8" y="18" textAnchor="start" fontFamily="sans-serif" fontSize="11" fill="#888">Roadmaps</text>
     <text x="118" y="18" textAnchor="start" fontFamily="sans-serif" fontSize="11" fill="#888">Consolidated</text>
-    <text x="228" y="18" textAnchor="start" fontFamily="sans-serif" fontSize="11" fill="#888">Design backlog</text>
+    <text x="228" y="18" textAnchor="start" fontFamily="sans-serif" fontSize="11" fontWeight="700" fill="#1a1a1a">Design backlog</text>
     <text x="350" y="18" textAnchor="start" fontFamily="sans-serif" fontSize="11" fill="#888">Groomed backlog</text>
     <text x="478" y="18" textAnchor="start" fontFamily="sans-serif" fontSize="11" fill="#888">Committed sprint plan</text>
 
@@ -35,8 +35,8 @@ export const BacklogProcessFlow = () => (
     {/* Arrow 2 */}
     <line x1="204" y1="83" x2="226" y2="83" stroke="rgba(0,0,0,0.2)" strokeWidth="1" strokeDasharray="4 3" markerEnd="url(#arrow)"/>
 
-    {/* Col 3: Design Backlog */}
-    <rect x="228" y="28" width="84" height="110" rx="4" fill="none" stroke="rgba(0,0,0,0.15)" strokeWidth="0.5"/>
+    {/* Col 3: Design Backlog — emphasized to match headline */}
+    <rect x="228" y="28" width="84" height="110" rx="4" fill="none" stroke="rgba(26,26,26,0.35)" strokeWidth="1.25"/>
     <rect x="236" y="38" width="68" height="32" rx="3" fill="rgba(0,0,0,0.1)"/>
     <text x="270" y="57" textAnchor="middle" fontFamily="sans-serif" fontSize="10" fill="#555">+ Adhoc</text>
     <rect x="236" y="78" width="68" height="32" rx="3" fill="rgba(0,0,0,0.1)"/>
